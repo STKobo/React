@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      const rootEl = document.getElementById('root');
+      const el = React.createElement(
+        'div',
+        {
+          className: 'header container'
+        },
+        React.createElement('h1', {}, 'Bienvenue sur le site!'),
+        React.createElement('h2', {}, 'Ce site a été conçu pour:'),
+        React.createElement(
+          'ul',
+          {
+            className: 'services',
+            id: 'site-services-list'
+          },
+          React.createElement('li', {}, 'Obtenir des informations sur la société'),
+          React.createElement('li', {}, 'Echanger avec vos collègues'),
+          React.createElement('li', {}, 'Vous inscrire aux afterwork qui sont organisés')
+        )
+      );
+      ReactDOM.render(el, rootEl);
+    </script>
+  </body>
+</html>

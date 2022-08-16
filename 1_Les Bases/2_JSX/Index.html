@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSX</title>
+</head>
+<body>
+    
+
+<script>
+    
+    const rootEl = document.getElementById('root');
+const el = (
+  <div className="header container">
+    <h1>Bienvenue sur le site!</h1>
+    <h2>Ce site a été conçu pour:</h2>
+    <ul className="services" id="site-services-list">
+      <li>Obtenir des informations sur la société</li>
+      <li>Echanger avec vos collègues</li>
+      <li>Vous inscrire aux afterwork qui sont organisés</li>
+    </ul>
+  </div>
+);
+ReactDOM.render(el, rootEl);
+
+</script>
+
+</body>
+</html>
