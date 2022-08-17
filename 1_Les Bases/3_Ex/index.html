@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+const rootEl = document.getElementById('root')
+const changeBtn = document.getElementById('change-content')
+const mood = 'Be encouraged, and encourage others'
+const pageMood = (
+  <div className="mood-wrapper">
+    <h1>Humeur du jour</h1>
+    <h2>{ mood }</h2>
+  </div>
+);
+const pagePicture = (
+  <div className="picture-wrapper">
+     <img src="https://images.unsplash.com/photo-1542728498-09c6a1af7cb9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" />
+  </div>
+)
+changeBtn.addEventListener("click", function (){
+  el === pageMood ? el = pagePicture : el = pageMood
+  ReactDOM.render(el, rootEl)
+});
+let el = pageMood
+ReactDOM.render(el, rootEl)
+
+    </script>
+
+
+</body>
+</html>
